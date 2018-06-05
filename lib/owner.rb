@@ -76,4 +76,7 @@ class Owner
     fishes.each { |fish| fish.mood= "nervous" }
     self.pets.each { |type, pets| pets.clear }
   end
+
+  def list_pets
+    "I have #{pets[:fish].size} fish, #{pets[:dogs].size} dog(s), and #{pets[:cats].size} cat(s)."
 end
