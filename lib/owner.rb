@@ -69,7 +69,8 @@ class Owner
 
   def sell_pets
     self.pets.each { |type, pets| pets.clear }
-    all = pets[:fishes] and pets[:cats] and pets[:dogs]
+    all = []
+    all << pets[:fishes] and pets[:cats] and pets[:dogs]
     all.each { |o| o.mood= "nervous" }
   end
 end
