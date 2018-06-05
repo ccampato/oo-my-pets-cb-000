@@ -70,10 +70,10 @@ class Owner
   def sell_pets
     self.pets.each { |type, pets| pets.clear }
     dogs = pets[:dogs]
-    dogs.each { |dog| dog.mood= "happy" }
+    dogs.each { |dog| dog.mood= "nervous" }
     cats = pets[:cats]
-    cats.each { |cat| cat.mood= "happy" }
+    cats.each { |cat| cat.mood= "nervous" }
     fishes = pets[:fishes]
-    fishes.each { |fish| fish.mood= "happy" }
+    fishes.each { |fish| fish.mood= "nervous" }
   end
 end
