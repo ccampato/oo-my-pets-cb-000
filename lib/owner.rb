@@ -75,6 +75,5 @@ class Owner
     fishes = pets[:fishes]
     fishes.each { |fish| fish.mood= "nervous" }
     self.pets.each { |type, pets| pets.clear }
-
   end
 end
