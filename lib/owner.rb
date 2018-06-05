@@ -53,24 +53,24 @@ class Owner
   end
 
   def walk_dogs
-    dogs = pets[:dogs]
+    @dogs = pets[:dogs]
     dogs.each { |dog| dog.mood= "happy" }
   end
 
   def play_with_cats
-    cats = pets[:cats]
+    @cats = pets[:cats]
     cats.each { |cat| cat.mood= "happy" }
   end
 
   def feed_fish
-    fishes = pets[:fishes]
+    @fishes = pets[:fishes]
     fishes.each { |fish| fish.mood= "happy" }
   end
 
   def sell_pets
     self.pets.each { |type, pets| pets.clear }
-    all = []
-    all << pets[:fishes] and pets[:cats] and pets[:dogs]
-    all.each { |each| each.mood= "nervous" }
+    dogs.each { |dog| dog.mood= "nervous" }
+    cats.each { |cat| cat.mood= "nervous" }
+    fishes.each { |fish| fish.mood= "nervous" }
   end
 end
