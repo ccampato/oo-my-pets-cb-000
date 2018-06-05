@@ -71,6 +71,6 @@ class Owner
     self.pets.each { |type, pets| pets.clear }
     all = []
     all << pets[:fishes] and pets[:cats] and pets[:dogs]
-    all.each { |o| o.mood= "nervous" }
+    all.each { |each| each.mood= "nervous" }
   end
 end
